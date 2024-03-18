@@ -4,9 +4,8 @@
   "author": "Kamil Ganczarek",
   "license": "MIT",
   "homepage": "https://github.com/systeminsights/cypress-parallel",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/systeminsights/cypress-parallel.git"
+  "publishConfig": {
+    "registry": "https://nexus.systeminsights.com/repository/si-npm"
   },
   "keywords": [
     "cypress",
