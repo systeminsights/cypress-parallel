@@ -29,9 +29,13 @@
     "watch": "tsc --watch",
     "fmt": "prettier --ignore-path .gitignore --write '**/*.ts'",
     "test": "npm run test:fmt && npm run test:integration",
+    "test:coverage": "npm run test",
     "test:fmt": "prettier --ignore-path .gitignore --check '**/*.ts'",
     "test:integration": "cucumber-js",
-    "prepublishOnly": "npm run clean && npm run build && npm run test"
+    "prepublishOnly": "npm run clean && npm run build && npm run test",
+    "tc:build": "npm run build",
+    "tc:coverage": "npm run test:coverage"
+
   },
   "dependencies": {
     "@babel/types": "^7.23.0",
