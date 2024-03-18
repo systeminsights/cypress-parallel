@@ -1,7 +1,7 @@
 {
   "default": {
     "publishQuiet": true,
-    "format": ["@cucumber/pretty-formatter"],
+    "format": ["./node_modules/teamcity-cucumber-formatter"],
     "requireModule": ["ts-node/register"],
     "require": ["features/**/*.ts"]
   }
