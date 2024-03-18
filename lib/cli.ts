@@ -357,8 +357,7 @@ export async function run(argv: string[], env: NodeJS.ProcessEnv, cwd: string) {
           "cypress-multi-reporters",
           "--reporter-options",
           JSON.stringify({
-            reporterEnabled:
-              "spec, @vimana/cypress-parallel/knapsack-reporter",
+            reporterEnabled: "spec, @vimana/cypress-parallel/knapsack-reporter",
             vimanaCypressParallelKnapsackReporterReporterOptions: {
               output:
                 parallelConfiguration.writeKnapsack ??
