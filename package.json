@@ -1,12 +1,12 @@
 {
-  "name": "@badeball/cypress-parallel",
-  "version": "2.0.0",
-  "author": "Jonas Amundsen",
+  "name": "@vimana/cypress-parallel",
+  "version": "2.0.1",
+  "author": "Kamil Ganczarek",
   "license": "MIT",
-  "homepage": "https://github.com/badeball/cypress-parallel",
+  "homepage": "https://github.com/systeminsights/cypress-parallel",
   "repository": {
     "type": "git",
-    "url": "https://github.com/badeball/cypress-parallel.git"
+    "url": "git+https://github.com/systeminsights/cypress-parallel.git"
   },
   "keywords": [
     "cypress",
@@ -21,7 +21,7 @@
     "knapsack-reporter.d.ts"
   ],
   "bin": {
-    "cypress-parallel": "./bin/cypress-parallel"
+    "cypress-parallel": "bin/cypress-parallel"
   },
   "scripts": {
     "clean": "rm -f knapsack-reporter.{js,d.ts} && bash -O globstar -c 'rm -f lib/**/*.{js,d.ts}'",
@@ -41,7 +41,7 @@
     "cosmiconfig": "^7.0.1",
     "cypress-multi-reporters": "^1.5.0",
     "is-npm": "^5.0.0",
-    "recast": "^0.23.4",
+    "recast": "^0.22.0",
     "shell-quote": "^1.7.2"
   },
   "devDependencies": {
@@ -53,7 +53,7 @@
     "@types/shell-quote": "^1.7.1",
     "@types/stream-buffers": "^3.0.4",
     "cypress": "^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0",
-    "dtslint": "^4.0.5",
+    "dtslint": "^2.0.6",
     "esbuild": "^0.11.12",
     "mocha": "^8.2.0",
     "prettier": "^2.8.8",
@@ -64,5 +64,12 @@
   },
   "peerDependencies": {
     "cypress": "^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0"
+  },
+  "description": "[![Build status](https://github.com/systeminsights/cypress-parallel/actions/workflows/build.yml/badge.svg)](https://github.com/badeball/cypress-parallel/actions/workflows/build.yml) [![Npm package weekly downloads](https://badgen.net/npm/dw/@badeball/cypress-parallel)](https://npmjs.com/package/@badeball/cypress-parallel)",
+  "bugs": {
+    "url": "https://https://github.com/systeminsights/cypress-parallel/issues"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }

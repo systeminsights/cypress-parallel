@@ -35,7 +35,7 @@ Before(async function ({ gherkinDocument, pickle }) {
     `
   );
 
-  await fs.mkdir(path.join(this.tmpDir, "node_modules", "@badeball"), {
+  await fs.mkdir(path.join(this.tmpDir, "node_modules", "@vimana"), {
     recursive: true,
   });
 
@@ -47,7 +47,7 @@ Before(async function ({ gherkinDocument, pickle }) {
   const selfLink = path.join(
     projectPath,
     "node_modules",
-    "@badeball",
+    "@vimana",
     "cypress-parallel"
   );
 
